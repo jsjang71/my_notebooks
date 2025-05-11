@@ -1,0 +1,9 @@
+digraph {
+	A [label=Start]
+	B [label="Decision?"]
+	C [label=Yes]
+	D [label=No]
+	A -> B
+	B -> C [label=Yes]
+	B -> D [label=No]
+}

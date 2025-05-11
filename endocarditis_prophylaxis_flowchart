@@ -1,0 +1,14 @@
+// Endocarditis Prophylaxis Flowchart
+digraph {
+	A [label="시술 계획 (ex. 치과 시술)"]
+	B [label="① 점막 천공 시술인가?"]
+	C [label="② 고위험 심질환자인가?
+(인공판막, IE 병력, 청색증형 CHD 등)"]
+	D [label="▶ 예방적 항생제 치료 시행"]
+	E [label="▶ 항생제 예방 치료 불필요"]
+	A -> B
+	B -> C [label="예"]
+	B -> E [label="아니오"]
+	C -> D [label="예"]
+	C -> E [label="아니오"]
+}
